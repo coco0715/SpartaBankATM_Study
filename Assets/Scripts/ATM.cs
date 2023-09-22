@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class ATM : MonoBehaviour
 {
-    int cash;
-    int balance;
-    // Start is called before the first frame update
-    void Start()
+    public int cash = 100000;
+    public int balance = 50000;
+   
+    public void Deposit(int amount)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (amount <= cash)
+        {
+            cash -= amount;
+            balance += amount;
+        }
     }
 }
