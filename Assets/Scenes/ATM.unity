@@ -2550,6 +2550,8 @@ MonoBehaviour:
   count: 0
   uiPopup: {fileID: 1141248525}
   inputDeposit: {fileID: 1509943217}
+  textCashValue: {fileID: 48461965}
+  textBalanceValue: {fileID: 1400075261}
 --- !u!1 &1078684279
 GameObject:
   m_ObjectHideFlags: 0
