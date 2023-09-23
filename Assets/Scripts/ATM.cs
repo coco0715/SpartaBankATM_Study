@@ -7,7 +7,6 @@ public class ATM : MonoBehaviour
     public int cash = 100000;
     public int balance = 50000;
     public int count = 0;
-    public bool depositCheck = false;
    
     public void Deposit(int amount)
     {
@@ -18,12 +17,11 @@ public class ATM : MonoBehaviour
         }
     }
 
-    public void InputCount(bool depositCheck)
+    public void InputCount(int amount)
     {
-        if (depositCheck)
+        if (amount <= cash)
         {
             count += 1;
-            depositCheck = false;
         }
     }
 }
