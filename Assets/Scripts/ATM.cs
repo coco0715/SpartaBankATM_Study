@@ -9,9 +9,10 @@ public class ATM : MonoBehaviour
     public int balance = 50000;
     public int count = 0;
 
+    //[SerializeField] private GameObject btnCashInfo;
+    //public TextMeshProUGUI txtCloseMark;
     [SerializeField] private GameObject uiPopup;
     [SerializeField] private TMP_InputField inputDeposit;
-
     public void InputDepositMoney()
     {
         int amount;
@@ -43,4 +44,9 @@ public class ATM : MonoBehaviour
     {
         uiPopup.SetActive(false);
     }
+
+    //public void CloseDepositCountInfo()
+    //{
+    //    txtCloseMark.text = "O";  
+    //}
 }
