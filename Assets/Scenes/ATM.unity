@@ -2548,7 +2548,6 @@ MonoBehaviour:
   cash: 100000
   balance: 50000
   count: 0
-  txtCloseMark: {fileID: 556484034}
   uiPopup: {fileID: 1141248525}
   inputDeposit: {fileID: 1509943217}
 --- !u!1 &1078684279
@@ -5270,7 +5269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1470564218
 RectTransform:
   m_ObjectHideFlags: 0
