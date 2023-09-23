@@ -38,4 +38,9 @@ public class ATM : MonoBehaviour
             count += 1;
         }
     }
+
+    public void ClosePopup()
+    {
+        uiPopup.SetActive(false);
+    }
 }
