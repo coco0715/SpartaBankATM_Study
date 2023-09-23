@@ -9,8 +9,8 @@ public class ATM : MonoBehaviour
     public int balance = 50000;
     public int count = 0;
 
-    [SerializeField]private TMP_InputField inputDeposit;
-   
+    [SerializeField] private GameObject uiPopup;
+    [SerializeField] private TMP_InputField inputDeposit;
 
     public void InputDepositMoney()
     {
@@ -24,6 +24,10 @@ public class ATM : MonoBehaviour
         {
             cash -= amount;
             balance += amount;
+        }
+        else
+        {
+            uiPopup.SetActive(true);
         }
     }
 
