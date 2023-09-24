@@ -13,14 +13,6 @@ public class ATM : MonoBehaviour
     //[SerializeField] private GameObject txtCloseMark;
     [SerializeField] private GameObject uiPopup;
     [SerializeField] private TMP_InputField inputDeposit;
-    [SerializeField] private TMP_Text textCashValue;
-    [SerializeField] private TMP_Text textBalanceValue;
-
-    private void UpdateMoney()
-    {
-        textCashValue.text = cash.ToString();
-        textBalanceValue.text = balance.ToString();
-    }
     public void InputDepositMoney()
     {
         int amount;
@@ -33,7 +25,6 @@ public class ATM : MonoBehaviour
         {
             cash -= amount;
             balance += amount;
-            UpdateMoney();
         }
         else
         {
@@ -53,6 +44,7 @@ public class ATM : MonoBehaviour
     {
         uiPopup.SetActive(false);
     }
+    
     //public void CachInfoControllerMark()
     //{
     //    if (cashInfoMark)
