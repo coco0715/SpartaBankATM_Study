@@ -54,6 +54,7 @@ public class ATM : MonoBehaviour
         uiPopup.SetActive(false);
     }
 
+    //TODO
     //public void CloseDepositCountInfo()
     //{
     //    txtCloseMark.text = "O";  
