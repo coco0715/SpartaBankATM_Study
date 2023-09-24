@@ -16,11 +16,13 @@ public class ATM : MonoBehaviour
 
     [SerializeField] private TMP_Text textCashValue;
     [SerializeField] private TMP_Text textBalanceValue;
+    [SerializeField] private TMP_Text textDepositCount;
 
     public void UpdateMoney()
     {
         textBalanceValue.text = balance.ToString();
         textCashValue.text = cash.ToString();
+        textDepositCount.text = count.ToString();
     }
     public void InputDepositMoney()
     {
@@ -34,6 +36,7 @@ public class ATM : MonoBehaviour
         {
             cash -= amount;
             balance += amount;
+            count++;
             UpdateMoney();
         }
         else
@@ -42,13 +45,13 @@ public class ATM : MonoBehaviour
         }
     }
 
-    public void InputCount(int amount)
-    {
-        if (amount <= cash)
-        {
-            count += 1;
-        }
-    }
+    //public void InputCount(int amount)
+    //{
+    //    if (amount <= cash)
+    //    {
+    //        count += 1;
+    //    }
+    //}
 
     public void ClosePopup()
     {
