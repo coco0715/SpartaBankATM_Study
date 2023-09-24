@@ -8,9 +8,9 @@ public class ATM : MonoBehaviour
     public int cash = 100000;
     public int balance = 50000;
     public int count = 0;
+    //public bool cashInfoMark = true;
 
-    //[SerializeField] private GameObject btnCashInfo;
-    //public TextMeshProUGUI txtCloseMark;
+    //[SerializeField] private GameObject txtCloseMark;
     [SerializeField] private GameObject uiPopup;
     [SerializeField] private TMP_InputField inputDeposit;
     [SerializeField] private TMP_Text textCashValue;
@@ -53,10 +53,17 @@ public class ATM : MonoBehaviour
     {
         uiPopup.SetActive(false);
     }
-
-    //TODO
-    //public void CloseDepositCountInfo()
+    //public void CachInfoControllerMark()
     //{
-    //    txtCloseMark.text = "O";  
+    //    if (cashInfoMark)
+    //    {
+    //        txtCloseMark.SetActive(false);
+    //        cashInfoMark = false;
+    //    }
+    //    else
+    //    {
+    //        txtCloseMark.SetActive(true);
+    //        cashInfoMark = true;
+    //    }
     //}
 }
